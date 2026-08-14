@@ -1,11 +1,11 @@
 package ng.ourChemist.repositories;
 
-import ng.ourChemist.models.User;
+import ng.ourChemist.models.Batch;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends MongoRepository<User, String> {
+public interface BatchRepository extends MongoRepository<Batch, String> {
 
-    User findByUsername(String username);
 }
+
